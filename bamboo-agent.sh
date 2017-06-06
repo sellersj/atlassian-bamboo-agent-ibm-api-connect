@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root 
+cd /home/bamboo 
 
 if [ -z "${BAMBOO_SERVER}" ]; then
 	echo "Bamboo server URL undefined!" >&2
@@ -11,7 +11,7 @@ fi
 BAMBOO_AGENT=atlassian-bamboo-agent-installer.jar
 
 if [ -z "${BAMBOO_AGENT_HOME}" ]; then
-	export BAMBOO_AGENT_HOME=/var/lib/bamboo
+	export BAMBOO_AGENT_HOME=/home/bamboo
 fi
 
 if [ ! -f ${BAMBOO_AGENT} ]; then
