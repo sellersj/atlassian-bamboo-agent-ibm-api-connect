@@ -3,7 +3,7 @@ This installation allows to execute api connect commands on container host. To p
 run this agent use the following command line:
 
 ```
-docker run -h remote-agent-name-to-display -d --restart=always -e BAMBOO_SERVER=http://your.bamboo.server/ -v /var/run/docker.sock:/var/run/docker.sock sellersj/atlassian-bamboo-agent-ibm-api-connect
+docker run -h remote-agent-name-to-display -d --restart=always -e BAMBOO_SERVER=http://your.bamboo.server/ sellersj/atlassian-bamboo-agent-ibm-api-connect
 ```
 
 You can also pass environment variable BAMBOO_AGENT_CAPABILITY with content formatted as JAVA property (property=value) which will be added to agent capabilities.
