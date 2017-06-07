@@ -2,7 +2,7 @@ FROM pitta/jdk8-node6-git-apic
 
 ENV HOME /home/bamboo
 RUN useradd --create-home --home-dir $HOME bamboo \
-&& chown -R bamboo:bamboo $HOME
+  && chown -R bamboo:bamboo $HOME
 
 
 USER bamboo
