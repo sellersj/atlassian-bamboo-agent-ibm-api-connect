@@ -7,6 +7,9 @@ RUN useradd --create-home --home-dir $HOME bamboo \
 
 USER bamboo
 
+ENV GIT_USER="APIC User"
+ENV GIT_EMAIL="apic.user@example.com"
+
 # Preparing agent environment
 WORKDIR /home/bamboo
 

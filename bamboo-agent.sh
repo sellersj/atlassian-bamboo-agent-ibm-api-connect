@@ -2,6 +2,10 @@
 
 cd /home/bamboo 
 
+# Git settings.
+git congig --global user.name $GIT_USER
+git config --global user.email $GIT_EMAIL
+
 if [ -z "${BAMBOO_SERVER}" ]; then
 	echo "Bamboo server URL undefined!" >&2
 	echo "Please set BAMBOO_SERVER environment variable to URL of your Bamboo instance." >&2
