@@ -3,7 +3,7 @@
 cd /home/bamboo 
 
 # Git settings.
-git congig --global user.name $GIT_USER
+git config --global user.name $GIT_USER
 git config --global user.email $GIT_EMAIL
 
 if [ -z "${BAMBOO_SERVER}" ]; then
